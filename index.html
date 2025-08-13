@@ -16,13 +16,13 @@
             font-family: 'Playfair Display', serif;
         }
         .hero-bg {
-            background-image: url('https://placehold.co/1920x1080/552200/facc15?text=Sol+de+Acuario');
+            background-image: url('https://placehold.co/1920x1080/DAA520/722F37?text=Sol+de+Acuario');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
         .section-bg {
-            background-color: #f7f9fb; /* Lighter blue */
+            background-color: #F5E6A0; /* Light golden */
         }
         .scroll-container {
             -ms-overflow-style: none;  /* IE and Edge */
@@ -31,33 +31,50 @@
         .scroll-container::-webkit-scrollbar {
             display: none; /* Chrome, Safari, and Opera */
         }
+        
+        /* Custom golden-burgundy theme */
+        .golden-bg {
+            background-color: #DAA520; /* Golden Rod */
+        }
+        .burgundy-text {
+            color: #722F37; /* Dark burgundy */
+        }
+        .golden-text {
+            color: #B8860B; /* Dark golden rod */
+        }
+        .burgundy-bg {
+            background-color: #722F37;
+        }
+        .light-golden-bg {
+            background-color: #F5E6A0;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800 antialiased">
 
     <!-- Header & Navigation -->
-    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <header id="header" class="golden-bg backdrop-blur-md sticky top-0 z-50 shadow-sm">        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#home" class="flex-shrink-0">
                 <img src="logo_sol.png" alt="Sol de Acuario Logo" class="h-12 w-auto">
             </a>            <div class="hidden lg:flex items-center space-x-6">
-                <a href="#about" class="text-gray-600 hover:text-blue-800 transition">About</a>
-                <a href="#retreats" class="text-gray-600 hover:text-blue-800 transition">Retreats</a>
-                <a href="#medicines" class="text-gray-600 hover:text-blue-800 transition">Medicines</a>
-                <a href="#music" class="text-gray-600 hover:text-blue-800 transition">Music</a>
-                <a href="#location" class="text-gray-600 hover:text-blue-800 transition">Location</a>
-                <a href="#contact" class="text-gray-600 hover:text-blue-800 transition">Contact</a>            </div>
-             <a href="#booking" class="hidden lg:inline-block bg-blue-800 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition transform hover:scale-105">Reserve Your Spot</a>
-            <button id="mobile-menu-button" class="lg:hidden text-gray-800 focus:outline-none">
+                <a href="#about" class="burgundy-text hover:text-yellow-800 transition">About</a>
+                <a href="#retreats" class="burgundy-text hover:text-yellow-800 transition">Retreats</a>
+                <a href="#medicines" class="burgundy-text hover:text-yellow-800 transition">Medicines</a>
+                <a href="#music" class="burgundy-text hover:text-yellow-800 transition">Music</a>
+                <a href="#location" class="burgundy-text hover:text-yellow-800 transition">Location</a>
+                <a href="#contact" class="burgundy-text hover:text-yellow-800 transition">Contact</a>            </div>
+             <a href="#booking" class="hidden lg:inline-block burgundy-bg text-yellow-100 font-bold py-2 px-6 rounded-full hover:bg-yellow-800 transition transform hover:scale-105">Reserve Your Spot</a>
+            <button id="mobile-menu-button" class="lg:hidden burgundy-text focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
         <!-- Mobile Menu -->        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
-            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-800">About</a>
-            <a href="#retreats" class="block py-2 text-gray-600 hover:text-blue-800">Retreats</a>
-            <a href="#medicines" class="block py-2 text-gray-600 hover:text-blue-800">Medicines</a>
-            <a href="#music" class="block py-2 text-gray-600 hover:text-blue-800">Music</a>
-            <a href="#location" class="block py-2 text-gray-600 hover:text-blue-800">Location</a>            <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-800">Contact</a>
-            <a href="#booking" class="block mt-4 bg-blue-800 text-white font-bold py-2 px-6 rounded-full text-center">Reserve Your Spot</a>
+            <a href="#about" class="block py-2 burgundy-text hover:text-yellow-800">About</a>
+            <a href="#retreats" class="block py-2 burgundy-text hover:text-yellow-800">Retreats</a>
+            <a href="#medicines" class="block py-2 burgundy-text hover:text-yellow-800">Medicines</a>
+            <a href="#music" class="block py-2 burgundy-text hover:text-yellow-800">Music</a>
+            <a href="#location" class="block py-2 burgundy-text hover:text-yellow-800">Location</a>            <a href="#contact" class="block py-2 burgundy-text hover:text-yellow-800">Contact</a>
+            <a href="#booking" class="block mt-4 burgundy-bg text-yellow-100 font-bold py-2 px-6 rounded-full text-center">Reserve Your Spot</a>
         </div>
     </header>
 
@@ -67,47 +84,11 @@
             <div class="container mx-auto px-6 text-center bg-black/50 py-20 rounded-lg">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4">Reconnect with Your Roots</h1>
                 <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">Embark on a transformative journey with sacred plant medicines and ancestral traditions in the heart of Bulgaria's mystical Rose Valley.</p>
-                <a href="#retreats" class="bg-white text-blue-800 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition transform hover:scale-105 text-lg">Explore Our Retreats</a>
+                <a href="#retreats" class="bg-yellow-100 burgundy-text font-bold py-3 px-8 rounded-full hover:bg-yellow-200 transition transform hover:scale-105 text-lg">Explore Our Retreats</a>
             </div>
         </section>
 
-        <!-- Highlighted Sections -->
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <!-- Team Preview -->
-                <div class="mb-16">
-                    <h2 class="text-3xl font-bold text-center mb-8">Meet the Guides</h2>
-                    <div class="relative">
-                        <div class="scroll-container flex overflow-x-auto space-x-8 pb-4">
-                            <!-- Team Member Cards -->
-                            <div class="flex-shrink-0 w-80 bg-gray-100 rounded-lg shadow-lg p-6 text-center">
-                                <img src="https://placehold.co/150x150/8e9aaf/ffffff?text=Jos%C3%A9" alt="José" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
-                                <h3 class="text-xl font-bold mb-2">José</h3>
-                                <p class="text-gray-600">Guardian of the Shuar tradition, bringing wisdom and deep connection to the plant world.</p>
-                            </div>
-                            <div class="flex-shrink-0 w-80 bg-gray-100 rounded-lg shadow-lg p-6 text-center">
-                                <img src="https://placehold.co/150x150/a9b7c6/ffffff?text=Misha" alt="Misha" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
-                                <h3 class="text-xl font-bold mb-2">Misha</h3>
-                                <p class="text-gray-600">Facilitator and translator, bridging worlds with compassion and clarity.</p>
-                            </div>
-                            <div class="flex-shrink-0 w-80 bg-gray-100 rounded-lg shadow-lg p-6 text-center">
-                                <img src="https://placehold.co/150x150/c7b8a9/ffffff?text=Houdini" alt="Houdini" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
-                                <h3 class="text-xl font-bold mb-2">Houdini</h3>
-                                <p class="text-gray-600">Master of sound and ceremony, guiding journeys with the rhythm of the drum.</p>
-                            </div>
-                             <div class="flex-shrink-0 w-80 bg-gray-100 rounded-lg shadow-lg p-6 text-center">
-                                <img src="https://placehold.co/150x150/a0a0a0/ffffff?text=Team" alt="Team" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
-                                <h3 class="text-xl font-bold mb-2">Our Community</h3>
-                                <p class="text-gray-600">And the loving community that supports every step of the journey.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Other Previews: Medicines, Music, Location -->
-            </div>
-        </section>
-
-        <!-- About Us -->
+        <!-- About Us (Our Sacred Commitment) -->
         <section id="about" class="py-20 section-bg">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -140,51 +121,40 @@
             </div>
         </section>
 
-        <!-- Medicine Retreats -->
-        <section id="retreats" class="py-20 bg-white">
+        <!-- Meet the Guides -->
+        <section id="guides" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold">Our Medicine Retreats</h2>
-                    <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">A profound journey of healing, purification, and connection, guided by sacred plant medicines and ancient rituals.</p>
+                    <h2 class="text-4xl font-bold">Meet the Guides</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Our dedicated team of healers, musicians, and guides who hold sacred space for your journey.</p>
                 </div>
-                <div class="grid md:grid-cols-3 gap-8 text-center">
-                    <!-- Kambo -->
-                    <div class="border border-gray-200 rounded-lg p-8 shadow-md hover:shadow-xl transition">
-                        <h3 class="text-2xl font-bold mb-4">Kambô</h3>
-                        <p class="text-gray-700">The sacred frog secretion for deep physical and energetic cleansing. We honor its Amazonian origins, applying it with intention and care to purify the body and strengthen the spirit.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member Cards -->
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-6 text-center">
+                        <img src="https://placehold.co/150x150/8e9aaf/ffffff?text=Jos%C3%A9" alt="José" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <h3 class="text-xl font-bold mb-2">José</h3>
+                        <p class="text-gray-600">Guardian of the Shuar tradition, bringing wisdom and deep connection to the plant world.</p>
                     </div>
-                    <!-- Rapé -->
-                    <div class="border border-gray-200 rounded-lg p-8 shadow-md hover:shadow-xl transition">
-                        <h3 class="text-2xl font-bold mb-4">Rapé</h3>
-                        <p class="text-gray-700">A sacred shamanic snuff from the Amazon, used to clear the mind, open the third eye, and ground the spirit. Served with deep respect for its traditional use in prayer and meditation.</p>
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-6 text-center">
+                        <img src="https://placehold.co/150x150/a9b7c6/ffffff?text=Misha" alt="Misha" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Misha</h3>
+                        <p class="text-gray-600">Facilitator and translator, bridging worlds with compassion and clarity.</p>
                     </div>
-                    <!-- Tabaco -->
-                    <div class="border border-gray-200 rounded-lg p-8 shadow-md hover:shadow-xl transition">
-                        <h3 class="text-2xl font-bold mb-4">Tabaco</h3>
-                        <p class="text-gray-700">A grounding master plant, used ceremonially to cleanse, protect, and carry our prayers. Its ritualistic importance lies in its power to connect us to the earth and the present moment.</p>
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-6 text-center">
+                        <img src="https://placehold.co/150x150/c7b8a9/ffffff?text=Houdini" alt="Houdini" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Houdini</h3>
+                        <p class="text-gray-600">Master of sound and ceremony, guiding journeys with the rhythm of the drum.</p>
                     </div>
-                </div>
-                <div class="mt-16 bg-blue-50 p-12 rounded-lg">
-                    <h3 class="text-3xl font-bold text-center mb-8">What's Included in Your Retreat</h3>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div>
-                            <h4 class="text-xl font-bold mb-2">Inipi Ceremony (Sweat Lodge)</h4>
-                            <p class="text-gray-700 mb-4">A powerful purification ritual for prayer and rebirth. We provide cultural background and guidance on preparation. Please bring a towel and appropriate attire (sarong/shorts).</p>
-                            <h4 class="text-xl font-bold mb-2">Integrational Workshops</h4>
-                            <p class="text-gray-700">Group sessions focused on sharing, understanding, and integrating the experiences from the ceremonies, fostering a strong sense of community.</p>
-                        </div>
-                        <div>
-                           <h4 class="text-xl font-bold mb-2">Full Support</h4>
-                            <p class="text-gray-700 mb-4">Translation between English and Spanish is provided. We also facilitate pre-retreat online connections to build community before we even meet.</p>
-                            <h4 class="text-xl font-bold mb-2">Ceremonial Tools</h4>
-                            <p class="text-gray-700">High-quality, ethically sourced shamanic tools like kuripes and tepis are available for purchase during the retreat.</p>
-                        </div>
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-6 text-center">
+                        <img src="https://placehold.co/150x150/a0a0a0/ffffff?text=Team" alt="Team" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Our Community</h3>
+                        <p class="text-gray-600">And the loving community that supports every step of the journey.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Medicinal Plants & Traditions -->
+        <!-- The Sacred Medicines -->
         <section id="medicines" class="py-20 section-bg">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -226,6 +196,130 @@
             </div>
         </section>
 
+        <!-- Medicine Retreats -->
+        <section id="retreats" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">Our Medicine Retreats</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">A profound journey of healing, purification, and connection, guided by sacred plant medicines and ancient rituals.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Kambo -->
+                    <div class="border border-gray-200 rounded-lg p-8 shadow-md hover:shadow-xl transition">
+                        <h3 class="text-2xl font-bold mb-4">Kambô</h3>
+                        <p class="text-gray-700">The sacred frog secretion for deep physical and energetic cleansing. We honor its Amazonian origins, applying it with intention and care to purify the body and strengthen the spirit.</p>
+                    </div>
+                    <!-- Rapé -->
+                    <div class="border border-gray-200 rounded-lg p-8 shadow-md hover:shadow-xl transition">
+                        <h3 class="text-2xl font-bold mb-4">Rapé</h3>
+                        <p class="text-gray-700">A sacred shamanic snuff from the Amazon, used to clear the mind, open the third eye, and ground the spirit. Served with deep respect for its traditional use in prayer and meditation.</p>
+                    </div>
+                    <!-- Tabaco -->
+                    <div class="border border-gray-200 rounded-lg p-8 shadow-md hover:shadow-xl transition">
+                        <h3 class="text-2xl font-bold mb-4">Tabaco</h3>
+                        <p class="text-gray-700">A grounding master plant, used ceremonially to cleanse, protect, and carry our prayers. Its ritualistic importance lies in its power to connect us to the earth and the present moment.</p>
+                    </div>
+                </div>
+                
+                <!-- Vision Quest Ceremony -->
+                <div class="mt-16">
+                    <h3 class="text-3xl font-bold text-center mb-8">Vision Quest</h3>
+                    <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">A sacred ceremony of seeking vision, guidance, and connection with the spirit world through solitude, prayer, and communion with nature.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- What's Included -->
+                        <div class="bg-blue-50 p-8 rounded-lg">
+                            <h4 class="text-2xl font-bold mb-6 text-center">What's Included in Your Retreat</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <h5 class="text-lg font-bold mb-2">Inipi Ceremony (Sweat Lodge)</h5>
+                                    <p class="text-gray-700">A powerful purification ritual for prayer and rebirth. We provide cultural background and guidance on preparation. Please bring a towel and appropriate attire (sarong/shorts).</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-lg font-bold mb-2">Integrational Workshops</h5>
+                                    <p class="text-gray-700">Group sessions focused on sharing, understanding, and integrating the experiences from the ceremonies, fostering a strong sense of community.</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-lg font-bold mb-2">Full Support</h5>
+                                    <p class="text-gray-700">Translation between English and Spanish is provided. We also facilitate pre-retreat online connections to build community before we even meet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Ceremonial Tools -->
+                        <div class="bg-gray-50 p-8 rounded-lg">
+                            <h4 class="text-2xl font-bold mb-6 text-center">Ceremonial Tools</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <h5 class="text-lg font-bold mb-2 cursor-pointer hover:text-blue-600" onclick="openToolModal()">Kuripes & Tepis</h5>
+                                    <p class="text-gray-700">Sacred pipes for administering Rapé. High-quality, ethically sourced shamanic tools available for purchase during the retreat.</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-lg font-bold mb-2">Ceremonial Drum</h5>
+                                    <p class="text-gray-700">The voice of the Great Spirit. Used to move energy, induce trance states, and call in protective spirits.</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-lg font-bold mb-2">Chakapa</h5>
+                                    <p class="text-gray-700">A rattle made of bundled leaves, used to cleanse a person's energetic field with rhythmic sound.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book Your Retreat -->
+                    <div class="mt-8 text-center">
+                        <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
+                            <h4 class="text-2xl font-bold mb-4">Book Your Retreat</h4>
+                            <p class="text-gray-700 mb-6">Ready to embark on your vision quest journey? Reserve your spot for this transformative experience.</p>
+                            <a href="#booking" class="bg-blue-800 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition transform hover:scale-105 text-lg">Reserve Your Spot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 bg-blue-50 p-12 rounded-lg">
+                    <h3 class="text-3xl font-bold text-center mb-8">Traditional Medicine Retreats - What's Included</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Inipi Ceremony (Sweat Lodge)</h4>
+                            <p class="text-gray-700 mb-4">A powerful purification ritual for prayer and rebirth. We provide cultural background and guidance on preparation. Please bring a towel and appropriate attire (sarong/shorts).</p>
+                            <h4 class="text-xl font-bold mb-2">Integrational Workshops</h4>
+                            <p class="text-gray-700">Group sessions focused on sharing, understanding, and integrating the experiences from the ceremonies, fostering a strong sense of community.</p>
+                        </div>
+                        <div>
+                           <h4 class="text-xl font-bold mb-2">Full Support</h4>
+                            <p class="text-gray-700 mb-4">Translation between English and Spanish is provided. We also facilitate pre-retreat online connections to build community before we even meet.</p>
+                            <h4 class="text-xl font-bold mb-2">Ceremonial Tools</h4>
+                            <p class="text-gray-700">High-quality, ethically sourced shamanic tools like kuripes and tepis are available for purchase during the retreat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section id="location" class="py-20 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                 <div>
+                    <h2 class="text-4xl font-bold mb-4">The Rose Valley, Bulgaria</h2>
+                    <p class="text-lg text-gray-700 mb-6">Our retreats are held in the spiritually potent Rose Valley, a land rich with history and natural power. Surrounded by ancient Thracian tombs and vibrant nature, the site itself is a potent ally in our healing work, offering a profound sense of peace and connection to the earth.</p>
+                     <div id="get-here" class="mt-8">
+                        <h3 class="text-2xl font-bold mb-3">How to Get Here</h3>
+                        <p class="text-gray-700 mb-4">We are located near Kazanlak. Detailed travel logistics, including bus/train schedules from major cities like Sofia and Plovdiv, will be provided upon booking. We can also assist with arranging local transfers.</p>
+                        <a href="#contact" class="text-blue-800 font-bold hover:underline">Contact us for travel assistance &raquo;</a>
+                    </div>
+                </div>
+                 <div>
+                    <img src="https://placehold.co/600x450/455a64/ffffff?text=Rose+Valley" alt="Rose Valley, Bulgaria" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+             <div class="container mx-auto px-6 mt-12">
+                <!-- Embedded Map Placeholder -->
+                <div class="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                    Embedded Map (e.g., Google Maps) will be here.
+                </div>
+            </div>
+        </section>
+
         <!-- Medicine Music -->
         <section id="music" class="py-20 bg-white">
             <div class="container mx-auto px-6">
@@ -258,63 +352,6 @@
                             </audio>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Shamanic Tools -->
-        <section id="tools" class="py-20 section-bg">
-            <div class="container mx-auto px-6">
-                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold">Tools of the Ceremony</h2>
-                    <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Each item holds a sacred purpose, aiding in healing and spiritual connection.</p>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Tool Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://placehold.co/400x300/b0bec5/ffffff?text=Kuripe+%26+Tepi" alt="Kuripe and Tepi pipes" class="w-full h-48 object-cover">                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">Kuripes & Tepis</h3>
-                            <p class="text-gray-700 mb-4">Pipes for self-administering (Kuripe) or serving (Tepi) Rapé. They are the sacred instruments used to deliver the medicine's breath.</p>
-                        </div>
-                    </div>
-                    <!-- Tool Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://placehold.co/400x300/90a4ae/ffffff?text=Shamanic+Drum" alt="Shamanic Drum" class="w-full h-48 object-cover">                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">Ceremonial Drum</h3>
-                            <p class="text-gray-700 mb-4">The voice of the Great Spirit. The drum's vibration helps to move energy, induce trance states, and call in protective spirits.</p>
-                        </div>
-                    </div>
-                    <!-- Tool Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://placehold.co/400x300/78909c/ffffff?text=Chakapa" alt="Chakapa" class="w-full h-48 object-cover">                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">Chakapa</h3>
-                            <p class="text-gray-700 mb-4">A rattle made of bundled leaves, used to cleanse a person's energetic field with a rhythmic, rustling sound.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Location -->
-        <section id="location" class="py-20 bg-white">
-            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-                 <div>
-                    <h2 class="text-4xl font-bold mb-4">The Rose Valley, Bulgaria</h2>
-                    <p class="text-lg text-gray-700 mb-6">Our retreats are held in the spiritually potent Rose Valley, a land rich with history and natural power. Surrounded by ancient Thracian tombs and vibrant nature, the site itself is a potent ally in our healing work, offering a profound sense of peace and connection to the earth.</p>
-                     <div id="get-here" class="mt-8">
-                        <h3 class="text-2xl font-bold mb-3">How to Get Here</h3>
-                        <p class="text-gray-700 mb-4">We are located near Kazanlak. Detailed travel logistics, including bus/train schedules from major cities like Sofia and Plovdiv, will be provided upon booking. We can also assist with arranging local transfers.</p>
-                        <a href="#contact" class="text-blue-800 font-bold hover:underline">Contact us for travel assistance &raquo;</a>
-                    </div>
-                </div>
-                 <div>
-                    <img src="https://placehold.co/600x450/455a64/ffffff?text=Rose+Valley" alt="Rose Valley, Bulgaria" class="rounded-lg shadow-xl w-full">
-                </div>
-            </div>
-             <div class="container mx-auto px-6 mt-12">
-                <!-- Embedded Map Placeholder -->
-                <div class="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
-                    Embedded Map (e.g., Google Maps) will be here.
                 </div>
             </div>
         </section>
@@ -495,6 +532,39 @@
         </div>
     </footer>
     
+    <!-- Tool Information Modal -->
+    <div id="toolModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg max-w-2xl mx-4 p-8 max-h-screen overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold burgundy-text">Kuripes & Tepis: Sacred Pipes</h3>
+                <button onclick="closeToolModal()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            </div>
+            <div class="space-y-4">
+                <img src="https://placehold.co/400x300/b0bec5/ffffff?text=Kuripe+%26+Tepi" alt="Kuripe and Tepi pipes" class="w-full rounded-lg">
+                <div>
+                    <h4 class="text-lg font-bold mb-2">What are Kuripes & Tepis?</h4>
+                    <p class="text-gray-700 mb-4">Kuripes and Tepis are sacred shamanic tools used in traditional Rapé ceremonies. These beautifully crafted pipes serve as the vessel through which the sacred tobacco medicine is administered.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-2">Kuripe (Self-Administration)</h4>
+                    <p class="text-gray-700 mb-4">A V-shaped pipe used for self-administering Rapé. One end goes into the nostril, while the other end is blown into by the user. This allows for personal communion with the medicine.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-2">Tepi (Serving Others)</h4>
+                    <p class="text-gray-700 mb-4">A straight pipe used by a practitioner to serve Rapé to another person. This creates a sacred exchange and allows for guided administration of the medicine.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-2">Sacred Craftsmanship</h4>
+                    <p class="text-gray-700 mb-4">Our pipes are ethically sourced and handcrafted by indigenous artisans, made from sustainable bamboo, bone, or wood. Each piece carries the intention and blessing of its creator.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-2">Available for Purchase</h4>
+                    <p class="text-gray-700">High-quality Kuripes and Tepis are available for purchase during our retreats, allowing you to take home a sacred tool for your continued practice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script>
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -510,6 +580,31 @@
                 mobileMenu.classList.add('hidden');
             });
         }
+        
+        // Tool modal functions
+        function openToolModal() {
+            document.getElementById('toolModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+        
+        function closeToolModal() {
+            document.getElementById('toolModal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('toolModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeToolModal();
+            }
+        });
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeToolModal();
+            }
+        });
     </script>
 
 </body>
