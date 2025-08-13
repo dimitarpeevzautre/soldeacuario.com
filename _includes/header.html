@@ -1,0 +1,30 @@
+<!-- Header & Navigation -->
+<header id="header" class="golden-bg backdrop-blur-md sticky top-0 z-50 shadow-sm">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <a href="#home" class="flex-shrink-0">
+            <img src="{{ '/assets/images/logo_sol.png' | relative_url }}" alt="Sol de Acuario Logo" class="h-12 w-auto">
+        </a>
+        <div class="hidden lg:flex items-center space-x-6">
+            <a href="#about" class="burgundy-text hover:text-yellow-800 transition">About</a>
+            <a href="#retreats" class="burgundy-text hover:text-yellow-800 transition">Retreats</a>
+            <a href="#medicines" class="burgundy-text hover:text-yellow-800 transition">Medicines</a>
+            <a href="#music" class="burgundy-text hover:text-yellow-800 transition">Music</a>
+            <a href="#location" class="burgundy-text hover:text-yellow-800 transition">Location</a>
+            <a href="#contact" class="burgundy-text hover:text-yellow-800 transition">Contact</a>
+        </div>
+        <a href="#booking" class="hidden lg:inline-block burgundy-bg text-yellow-100 font-bold py-2 px-6 rounded-full hover:bg-yellow-800 transition transform hover:scale-105">Reserve Your Spot</a>
+        <button id="mobile-menu-button" class="lg:hidden burgundy-text focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+        <a href="#about" class="block py-2 burgundy-text hover:text-yellow-800">About</a>
+        <a href="#retreats" class="block py-2 burgundy-text hover:text-yellow-800">Retreats</a>
+        <a href="#medicines" class="block py-2 burgundy-text hover:text-yellow-800">Medicines</a>
+        <a href="#music" class="block py-2 burgundy-text hover:text-yellow-800">Music</a>
+        <a href="#location" class="block py-2 burgundy-text hover:text-yellow-800">Location</a>
+        <a href="#contact" class="block py-2 burgundy-text hover:text-yellow-800">Contact</a>
+        <a href="#booking" class="block mt-4 burgundy-bg text-yellow-100 font-bold py-2 px-6 rounded-full text-center">Reserve Your Spot</a>
+    </div>
+</header>
