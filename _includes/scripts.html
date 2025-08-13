@@ -1,0 +1,41 @@
+<script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when a link is clicked
+    const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+    for (let link of mobileMenuLinks) {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    }
+    
+    // Tool modal functions
+    function openToolModal() {
+        document.getElementById('toolModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+    
+    function closeToolModal() {
+        document.getElementById('toolModal').classList.add('hidden');
+        document.body.style.overflow = 'auto'; // Restore scrolling
+    }
+    
+    // Close modal when clicking outside
+    document.getElementById('toolModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeToolModal();
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeToolModal();
+        }
+    });
+</script>
