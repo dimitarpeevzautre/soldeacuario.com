@@ -1,0 +1,52 @@
+// Font families
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+// Hero background
+.hero-bg {
+  background-image: url('https://placehold.co/1920x1080/DAA520/722F37?text=Sol+de+Acuario');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+// Section background
+.section-bg {
+  background-color: #F5E6A0; /* Light golden */
+}
+
+// Scroll container styles
+.scroll-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+}
+
+// Custom golden-burgundy theme
+.golden-bg {
+  background-color: #DAA520; /* Golden Rod */
+}
+
+.burgundy-text {
+  color: #722F37; /* Dark burgundy */
+}
+
+.golden-text {
+  color: #B8860B; /* Dark golden rod */
+}
+
+.burgundy-bg {
+  background-color: #722F37;
+}
+
+.light-golden-bg {
+  background-color: #F5E6A0;
+}
